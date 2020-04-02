@@ -3,6 +3,7 @@
 
 #include "base_class.h"
 #include <master_layer/RequestMarkerAngle.h>
+#include <numeric>
 
 class PathMarker : public Base_class
 {
@@ -11,7 +12,7 @@ public:
     virtual void loadParams () override;
     virtual void spinThreadBottom () override;
     bool markerAngle (master_layer::RequestMarkerAngle::Request &req,
-                       master_layer::RequestMarkerAngle::Response &res); 
+                       master_layer::RequestMarkerAngle::Response &res);
 
 private:
     double MAJOR;
